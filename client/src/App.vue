@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-//import HelloWorld from "./components/HelloWorld.vue";
+import "./styles/global.css";
 import { reactive } from "vue";
 import MainCard from "./components/MainCard.vue";
 import VideoPlayer from "./components/VideoPlayer.vue";
