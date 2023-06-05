@@ -4,7 +4,7 @@ const idomoo = require("../external/idomoo");
 router.get("/getProps", async (req, res) => {
   try {
     let response = await idomoo.sendGetRequest();
-    res.json(response.data);
+    res.send(response.data);
   } catch (error) {
     console.error("ERROR", error.message);
     res.status(500).json(response.error);
@@ -18,7 +18,7 @@ router.post("/generateVideo", async (req, res) => {
     try {
       const response = await idomoo.sendPostRequest(data);
       console.log(response);
-      res.json(response);
+      res.send(response);
     } catch (error) {
       console.error("ERROR", error.message);
       res.status(500).json(response.error);

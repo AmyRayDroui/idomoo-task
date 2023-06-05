@@ -4,7 +4,6 @@ const authString = process.env.ACCOUNT_ID + ":" + process.env.SECRET_KEY;
 const encodedString = btoa(authString);
 
 async function sendGetRequest() {
-  //request configuration
   const config = {
     method: "get",
     url: `https://usa-api.idomoo.com/api/v2/storyboards/${process.env.STORYBOARD_ID}`,
@@ -20,8 +19,6 @@ async function sendGetRequest() {
 
 async function sendPostRequest(jsonData) {
   console.log(jsonData);
-
-  //request configuration
   const config = {
     method: "post",
     url: `https://usa-api.idomoo.com/api/v2/storyboards/generate`,
