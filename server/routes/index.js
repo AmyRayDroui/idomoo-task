@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const idomoo = require("../external/idomoo");
+const NotFoundError = require("../errors/not-found-err");
 
 router.get("/getProps", async (req, res) => {
   try {
