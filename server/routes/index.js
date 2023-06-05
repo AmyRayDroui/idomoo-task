@@ -28,4 +28,8 @@ router.post("/generateVideo", async (req, res) => {
   }
 });
 
+router.get("*", () => {
+  throw new NotFoundError("Requested resource not found");
+});
+
 module.exports = { router };
