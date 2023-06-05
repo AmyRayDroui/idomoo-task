@@ -28,7 +28,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "http://localhost:3000",
+  baseUrl: "http://35.230.58.156/api",
   headers: {
     "Content-Type": "application/json",
   },
